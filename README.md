@@ -62,7 +62,7 @@ Después de que la aplicación inicie, visite [http://localhost:8080](http://loc
 ```
 npm run build
 ```
-Se creará una carpeta `dist` donde se encontrarán los archivos comprimidos necesarios para que la app se ejecute.
+Se creará una carpeta `dist` donde se encontrarán los archivos comprimidos necesarios para que la app se ejecute correctamente.
 
 <br />
 
