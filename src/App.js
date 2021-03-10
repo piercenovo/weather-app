@@ -26,8 +26,8 @@ const App = () => {
 
     const dateBuilder = (d) => {
 
-        let months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-        let days = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+        let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
         let day = days[d.getDay()];
         let date = d.getDate();
@@ -38,13 +38,17 @@ const App = () => {
     }
 
     return (
-        <div className="app">
+        <div className={
+            (typeof weather.main != "undefined") 
+            ? ((weather.main.temp > 16) ? 'app warm' : 'app')
+            : 'app'
+        }>
             <main className="app__container">
                 <div className="search__box">
                     <input
                         type="text"
                         className="search__bar"
-                        placeholder="Busca..."
+                        placeholder="Search..."
                         onChange={e => setQuery(e.target.value)}
                         value={query}
                         onKeyPress={search}
