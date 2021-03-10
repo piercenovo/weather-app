@@ -1,11 +1,10 @@
-import React from "react";
-import "./App.css"
+import "./App.css";
 
 const App = () => {
 
     return (
         <div className="app">
-            <h1>Hi wiiiii</h1>
+            <h1>Hi everyoneee</h1>
         </div>
     )
 }
