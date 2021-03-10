@@ -1,3 +1,4 @@
+const path = require('path');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const { HotModuleReplacementPlugin } = require("webpack");
 const { default: merge } = require("webpack-merge");
@@ -10,6 +11,7 @@ module.exports = merge(common, {
     devtool: "eval-source-map",
 
     output: {
+        path: path.resolve(__dirname, '../dist'),
         filename: "[name].bundle.js",
         chunkFilename: "[name].chunk.js",
     },
@@ -29,7 +31,7 @@ module.exports = merge(common, {
     },
 
     plugins: [
-        new HotModuleReplacementPlugin(),
+        new HotModuleReplacementPlugin(), 
         new ReactRefreshWebpackPlugin()
     ],
 
@@ -39,5 +41,9 @@ module.exports = merge(common, {
         open: "chrome",
         hot: true,
     },
+
+    
+
+    
 
 });
