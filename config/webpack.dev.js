@@ -37,7 +37,7 @@ module.exports = merge(common, {
 
     devServer: {
         contentBase: path.join(__dirname, '../dist'),
-        port: 8080,
+        port: 9090,
         open: "chrome",
         hot: true,
     },
