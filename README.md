@@ -1,5 +1,3 @@
-
-s
 <h1 align="center"> Weather App 🌦️ </h1>
 
 [Weather App](), es una app de clima, que cambia el background dinámicamente dependiendo de la temperatura obtenida por búsqueda de la ciudad o país. También muestra la fecha en tiempo real y los grados centígrados.
