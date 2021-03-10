@@ -59,9 +59,9 @@ const App = () => {
 
                         <div className="weather__box">
                             <div className="weather__temp">
-                                15ºc
+                                {Math.round(weather.main.temp)}°c
                             </div>
-                            <div className="weather__here">Soleado</div>
+                            <div className="weather__here">{weather.weather[0].main}</div>
                         </div>
                     </div>
                 ) : ('')}
