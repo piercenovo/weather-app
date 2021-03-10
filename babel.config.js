@@ -1,4 +1,4 @@
-{
+module.exports = {
     "presets": [
         [
             "@babel/preset-env",
@@ -13,5 +13,7 @@
                 "runtime": "automatic"
             }
         ]
-    ]
+    ],
+
+    "plugins": ["react-refresh/babel"]
 }
